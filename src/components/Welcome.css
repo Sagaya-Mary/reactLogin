@@ -1,34 +1,43 @@
-*{
+/* * {
     font-size: 12px;
-}
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+} */
 
 
-.login{
-height: 98%;
+.login {
+    height: 98%;
     width: 98%;
     background-image: url(asserts/banner.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
 }
-.form{
-height: 460px;
-width: 380px;
-position: relative;
-margin: 6% auto;
-background-color: #fff;
-padding: 5px;
-overflow: hidden;
+
+.form {
+    height: 460px;
+    width: 380px;
+    position: relative;
+    margin: 6% auto;
+    background-color: #fff;
+    padding: 5px;
+
 }
-.button-box{
+
+.headtag {
+    text-align: center;
+}
+
+.button-box {
     width: 220px;
     position: relative;
-    margin: 35px auto;
+    margin: 35px 35px;
     box-shadow: 0 0 20px 9px #ff61241f;
 
     border-radius: 30px;
 }
-.toggle-btn{
+
+.toggle-btn {
     padding: 5px 30px;
     position: relative;
     cursor: pointer;
@@ -36,26 +45,29 @@ overflow: hidden;
     border: 0;
     outline: none;
     color: black;
-    display: inline;
+
 }
-#btn{
+
+#btn {
     top: 0;
     left: 0;
     position: absolute;
     width: 110px;
     height: 100%;
-    background-image: linear-gradient(to right, red , yellow);
+    background-image: linear-gradient(to right, red, yellow);
     border-radius: 30px;
     transition: .5s;
 }
-.input-group{
-    top:180px;
-    position:absolute;
+
+.input-group {
+    top: 120px;
+    position: absolute;
     width: 220px;
     transition: .5s;
 }
-.input-field{
-    width:200px;
+
+.input-field {
+    width: 200px;
     padding: 10px 0;
     border-top: 0;
     border-left: 0;
@@ -64,37 +76,56 @@ overflow: hidden;
     border-right: 0;
     outline: none;
     background: transparent;
-    margin: 5px 20px 5px 45px;
+    margin: 5px 30px 5px 45px;
 }
 
-#submit-btn{
+#submit-btn {
     width: 85%;
     padding: 10px 30px;
-    cursor:pointer;
+    cursor: pointer;
     display: block;
-     margin:  5px 20px 5px 45px;
-    background: linear-gradient(to right, red , yellow);
+    margin: 40px 20px 5px 45px;
+    background: linear-gradient(to right, red, yellow);
     border: 0;
     outline: none;
     border-radius: 30px;
 }
-.check-box{
 
-    margin: 30px 0 5px 45px;
+.check-box {
+
+    margin: 20px 100px 5px 20px;
 
 }
 
-span{
+span {
     color: #777;
     font-size: 12px;
     bottom: 68px;
     left: 10px;
-    right:0;
+    right: 0;
+   
     position: absolute;
 }
-#login{
-    left: 50px;
+
+#login {
+    left: 60px;
+    top: 60px;
 }
-#register{
-    left: 450px;
+
+#register {
+    left: 60px;
+    top: 60px;
+}
+button.active{
+    background-color: aqua;
+}
+#btn2 {
+    top: 0;
+    left: 110px;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background-image: linear-gradient(to right, red, yellow);
+    border-radius: 30px;
+    transition: .5s;
 }
