@@ -1,28 +1,22 @@
 
 import './App.css';
-import Loginform from './components/Login';
-import Registerform from './components/RegisterForm';
-import Index from './components/Index';
-import Details from './components/Details'
-import Contact from './components/Contact'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//import Student from './components/Student/Student';
+ //import GetRequest from './components/HttpRequest/GetRequest';
+// import LifeCycle from './components/LifeCycle';
+ import Header from './components/Website/Header';
+ import Footer from './components/Website/Footer';
+ import RoutersPath from './components/Website/RoutersPath';
+//import PostRequest from './components/HttpRequest/PostRequest';
 function App() {
   return (
     <div className="App">
-    
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Loginform/>} />
-          <Route path="/login" element={<Loginform/>}/>
-          <Route path="/register" element={<Registerform/>}/>
-          <Route path="/home" element={<Index/>}/>
-
-          <Route path="/detail" element={<Details/>}/>
-          <Route path="/contact" element={<Contact/>}/>
-        </Routes>
-      </div>
-    </Router>
+     <Header/>
+    <RoutersPath/> 
+    <Footer/>  
+    {/* <LifeCycle/> */}
+     {/* <GetRequest/>  */}
+    {/* <PostRequest/>  */}
+    {/* <Student/> */}
     </div>
   );
 }
